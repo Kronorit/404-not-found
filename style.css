@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+#title {
+	margin: 15px;
+}
+
+#error {
+	margin: 50px auto;
+	width: 80vw;
+	max-width: 1250px;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+
+#error-text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+#image-404 {
+	align-self: center;
+	max-width: 392px;
+	max-height: 325px;
+	max-width: ;
+}
+
+#error-title {
+	align-self: flex-start;
+	width: 75%;
+	font-size: 54px;
+	margin: 10px 0 20px 20px;
+}
+
+#error-text {
+	width: 35%;
+	font-size: 18px;
+	margin: 0 0 20px 20px;
+}
+
+#homepage-button {
+	align-self: flex-start;
+	background-color: #333;
+	color: #fff;
+	padding: 15px 30px;
+	border: none;
+	margin: 10px 0 0 20px;
+	transition: background .3s ease;
+}
+
+#homepage-button:hover {
+	background-color: #484848;
+}
+
+#copyright {
+	display: block;
+	text-align: center;
+	margin-top: 14%;
+	color: #aaa;
+}
+
+@media only screen and (max-width: 850px) {
+	#error {
+		flex-direction: column;
+	}
+
+	#image-404 {
+		margin: 30px 10px;
+	}
+
+	#error-title {
+		width: 100%;
+	}
+
+	#error-text {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#image-404 {
+		margin: 30px 10px;
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	#image-404 {
+		margin: 40px 20px;
+		width: 200px;
+	}
+}
